@@ -5,16 +5,13 @@ const Nav = () => {
         <nav className="Nav">
             <ul>
                 <li>
-                    <a>Gallery</a>
-                </li>
-                <li>
                     <a href="https://github.com/MaurooRen/nasa-photo-of-the-day">Source Code</a>
                 </li>
                 <li>
                     <a href="https://api.nasa.gov/">Browse APIs</a>
                 </li>
                 <li>
-                    <a href="http://maurooren.com/">Develop by</a>
+                    <a href="http://maurooren.com/">Developed by</a>
                 </li>
             </ul>
         </nav>

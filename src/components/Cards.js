@@ -4,12 +4,9 @@ import Card from './Card'
 // HORIZONTAL SCROLL
 
 
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 import HorizontalScroll from "../horizontal-scroll";
-
-
-const Main = styled.main``;
 
 const HorizontalSection = styled.section`
   position: relative;

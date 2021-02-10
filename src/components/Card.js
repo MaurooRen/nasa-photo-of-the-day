@@ -1,10 +1,8 @@
 import React from 'react'
-import icon from '../assets/icons/planet-earth.svg'
 
 const Card = ({ setView, info }) => {
     return (
         <div className="Card">
-            {/* <img src={icon} alt="Planet Earth Icon" /> */}
             <i>🌎</i>
             <h4>{info.short}:</h4>
             <h3>{info.name}</h3>

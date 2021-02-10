@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Home from './views/HomeView/Home'
 import Apod from './views/OthersViews/Apod'
+import TechTranfer from './views/OthersViews/TechTranfer'
 import "./styles/App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       { view === 'HOME' && <Home view={view} setView={setView} /> }
       { view === 'APOD' && <Apod setView={setView} /> }
+      { view === 'TechTranfer' && <TechTranfer setView={setView} /> }
     </div>
   );
 }

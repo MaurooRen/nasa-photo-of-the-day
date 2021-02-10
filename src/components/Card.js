@@ -1,15 +1,15 @@
 import React from 'react'
 import icon from '../assets/icons/planet-earth.svg'
 
-const Card = ({ setView }) => {
+const Card = ({ setView, info }) => {
     return (
         <div className="Card">
             {/* <img src={icon} alt="Planet Earth Icon" /> */}
             <i>🌎</i>
-            <h4>APOD:</h4>
-            <h3>Astronomy Picture of the Day</h3>
-            <p>Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p>
-            <button onClick={() => setView('APOD')}>Explore this space 👩‍🚀</button>
+            <h4>{info.short}:</h4>
+            <h3>{info.name}</h3>
+            <p>{info.description}</p>
+            <button onClick={() => setView(info.component)}>Explore this space 👩‍🚀</button>
         </div>
     )
 }

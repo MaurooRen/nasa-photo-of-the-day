@@ -8,16 +8,6 @@ import styled, { createGlobalStyle } from "styled-components";
 
 import HorizontalScroll from "../horizontal-scroll";
 
-const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-`;
 
 const Main = styled.main``;
 
@@ -28,16 +18,11 @@ const HorizontalSection = styled.section`
   /* background-color: pink; */
 `;
 
-const BumperSection = styled.section`
-  text-align: center;
-  padding: 128px 16px;
-  /* background-color: skyblue; */
-`;
 
 const CardsContainer = styled.div`
   position: relative;
   height: 100%;
-  padding: 0 0 0 150px;
+  padding: 0 500px 0 150px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -45,23 +30,62 @@ const CardsContainer = styled.div`
   /* background-color: yellow; */
 `;
 
-
-
 // END HORIZONTAL SCROLL
 
 
 
+
+
+
+
 const Cards = ({ setView }) => {
+
+
+
+  const listAPIs = [
+    {
+      short: 'APOD',
+      name: 'Astronomy Picture of the Day',
+      description: 'Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.',
+      component: 'APOD',
+    },
+    {
+      short: 'APOD',
+      name: 'Astronomy Picture of the Day',
+      description: 'Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.',
+      component: 'APOD',
+    },
+    {
+      short: 'APOD',
+      name: 'Astronomy Picture of the Day',
+      description: 'Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.',
+      component: 'APOD',
+    },
+    {
+      short: 'APOD',
+      name: 'Astronomy Picture of the Day',
+      description: 'Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.',
+      component: 'APOD',
+    },
+    {
+      short: 'APOD',
+      name: 'Astronomy Picture of the Day',
+      description: 'Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.',
+      component: 'APOD',
+    },
+  ];
+
+
+
+
     return (
         <>
             <HorizontalSection>
                 <HorizontalScroll>
                     <CardsContainer>
-                      <Card setView={setView} />
-                      <Card setView={setView} />
-                      <Card setView={setView} />
-                      <Card setView={setView} />
-                      <Card setView={setView} />
+                      {
+                        listAPIs.map((element) => <Card setView={setView} info={element} key={element.component} />)
+                      }
                     </CardsContainer>
                 </HorizontalScroll>
             </HorizontalSection>

@@ -119,8 +119,7 @@
 }
 
 .Apod {
-    display: flex;
-    flex-flow: column wrap;
+    display: block;
     padding: 30px 0;
     width: 940px;
     /* background-color: pink; */
@@ -239,25 +238,18 @@
 
 
 .Image {
-    /* background-color: skyblue; */
+    background-color: #e6e9f0;
     display: block;
+    padding: 5px;
     margin-top: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
 .Image img {
     display: block;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
     width: 100%;
     /* background-color: skyblue; */
 }
-.Image span {
-    display: block;
-    color: #FFF;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 30px;
-    /* background-color: skyblue; */
-}
+
 
 
 
@@ -267,8 +259,9 @@
 
 
 .Video {
-    background-color: #000;
+    background-color: #e6e9f0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    padding: 5px;
     display: block;
     margin-top: 30px;
 }
@@ -288,15 +281,23 @@
     border-radius: 8px;
     border: 1px solid #CCC;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    display: inline-block;
+    display: block;
     margin-top: 30px;
     width: 100%;
 }
 .Text span {
     display: block;
-    padding: 30px;
+    padding: 30px 30px 10px;
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: 2.6rem;
+}
+
+.Text small {
+    display: block;
+    padding: 10px 30px 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
     line-height: 2.6rem;
 }
 

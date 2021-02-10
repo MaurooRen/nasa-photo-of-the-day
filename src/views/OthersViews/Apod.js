@@ -25,17 +25,15 @@ const Apod = ({ setView }) => {
 
     useEffect(fetchData, [])
 
-    console.log('Epa!', dataApod)
-
     return (
-        <div className="Apod">
+        <section className="Apod">
             <Title title={dataApod.title} subTitle={'Astronomy Picture of the Day'} />
             {
-                dataApod.media_type == 'video' ? <Video src={dataApod.url} /> : <Image src={dataApod.url} alt={dataApod.title} date={dataApod.date} />
+                dataApod.media_type === 'video' ? <Video src={dataApod.url} /> : <Image src={dataApod.url} alt={dataApod.title} />
             }
-            <Text text={dataApod.explanation} />
+            <Text text={dataApod.explanation} date={dataApod.date} />
             <CloseButton setView={setView} />
-        </div>
+        </section>
     )
 }
 
